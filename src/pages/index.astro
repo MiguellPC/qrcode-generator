@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Form from '../components/Form.jsx';
+---
+
+<Layout title="QR code Generator">
+  <Header />
+  <main>
+    <Form client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: min(900px, 80%);
+    min-width: 320px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

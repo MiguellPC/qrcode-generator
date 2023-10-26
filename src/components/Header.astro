@@ -1,0 +1,33 @@
+<header>
+  <img src="/qrcodeicon.svg" alt="QR code logo" />
+  <h1><span class="text-gradient">QR Code</span> Generator</h1>
+</header>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    gap: 1.5rem;
+  }
+  header img {
+    width: 3em;
+    height: 3em;
+  }
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>
